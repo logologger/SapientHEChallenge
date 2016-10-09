@@ -1,7 +1,7 @@
 var app=angular.module("myApp",['mainController','mainDirective','ngAnimate', 'ui.router','CommonData','ngMaterial','ngMessages','SharedServiceFactoryModule','mainService'])
 
 
-.config(function($stateProvider, $urlRouterProvider,$httpProvider,hljsServiceProvider)
+.config(function($stateProvider, $urlRouterProvider,$httpProvider)
        {
     
       $stateProvider
@@ -14,10 +14,7 @@ var app=angular.module("myApp",['mainController','mainDirective','ngAnimate', 'u
 
 
 
-          hljsServiceProvider.setOptions({
-            // replace tab with 2 spaces
-            tabReplace: '  '
-        });
+         
 
        $urlRouterProvider.otherwise('/');
     
