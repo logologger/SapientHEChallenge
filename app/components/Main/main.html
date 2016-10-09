@@ -41,7 +41,7 @@
             <div class="col-md-6">
               <p class="heading text-info">{{w.name}}</p>
               <p class="text-muted"><b>Purchased by:</b>{{w.purchased_by}} </p>
-              <p class="text-muted"> &#x20b9; {{w.price | currency:'&#8360'}} | <span star-rating rating-value="w.rating" max="5"></span>{{w.rating}}</p>
+              <p class="text-muted">  {{w.price | currency:'&#x20b9;'}} &nbsp;&nbsp;&nbsp;&nbsp;| <span star-rating rating-value="w.rating" max="5"></span>{{w.rating}}</p>
               <p>
               <i class="fa fa-tags"></i>
               <span ng-repeat="tag in w.tags" class="text-warning">{{tag}}{{$last ? ' ':', '}}&nbsp;</span>
