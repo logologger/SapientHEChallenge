@@ -14,8 +14,8 @@
 <link rel="stylesheet"  href="assets/css/bootstrap.css"/>   
 <link rel="stylesheet"  href="assets/css/bootstrap-select.css"/>
 <link rel="stylesheet"  href="assets/css/ng-table.css"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/><!-- 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css"> -->
 <link rel="stylesheet" href="assets/css/angular-material.css"/>
 
 <link rel="stylesheet" href="assets/css/glass_loader.css"/>
@@ -33,9 +33,9 @@
 <script type="text/javascript" src="assets/js/angular-animate.js"></script>
  <script type="text/javascript" src="assets/js/angular-aria.js"></script>  
 <script type="text/javascript" src="assets/js/angular-messages.js"></script>
- <script type="text/javascript" src="assets/js/angular-material.js"></script> 
+ <script type="text/javascript" src="assets/js/angular-material.js"></script> <!-- 
  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script> 
- <script src="http://pc035860.github.io/angular-highlightjs/angular-highlightjs.min.js"></script>
+ <script src="http://pc035860.github.io/angular-highlightjs/angular-highlightjs.min.js"></script> -->
 
 <!--APPLICATION--> 
     
