@@ -1,0 +1,64 @@
+ 
+<div class="container main_container" >
+  <div class="row">
+  
+    <div class="col-md-6">
+    <div class="wrapper">
+    
+      <input type="search" class="form-control" placeholder="Search (by Tags)" ng-model="main.query[main.queryBy]" />
+      
+        
+    </div>
+  </div>
+  <!-- <div class="col-md-3">
+
+      
+       <ul class="list-group"  style="display:inline-block">
+       <li class="list-group-item text-info">Sort By</li>
+  <li class="list-group-item"> <input type="radio"/>&nbsp;Rating</li>
+  <li class="list-group-item"><input type="radio"/>&nbsp;Likes</li>
+  
+</ul>
+</span>
+  
+     
+      
+    
+  </div> -->
+  </div>
+  <div class="row">
+    <div class="col-md-6" ng-repeat="w in main.deals | filter:main.query">
+    <div class="panel panel-default panel-primary" >
+    
+        <div class="panel-body">
+          
+        <!-- Custom Div is needed to display Every information regarding the Product -->
+          <div class="row">
+            <div class="col-md-6">
+            <!-- img will go here -->
+            <img src="{{w.image}}" alt="Product Image" height="150px" width="120px"/>
+            </div>
+            <div class="col-md-6">
+              <p class="heading text-info">{{w.name}}</p>
+              <p class="text-muted"><b>Purchased by:</b>{{w.purchased_by}} </p>
+              <p class="text-muted"> &#x20b9; {{w.price | currency:'&#8360'}} | <span star-rating rating-value="w.rating" max="5"></span>{{w.rating}}</p>
+              <p>
+              <i class="fa fa-tags"></i>
+              <span ng-repeat="tag in w.tags" class="text-warning">{{tag}}{{$last ? ' ':', '}}&nbsp;</span>
+              </p>
+              <p><i class="fa fa-link"></i> <b>&nbsp;Link:&nbsp;</b><a href="{{w.link}}" target="_blank">{{w.name}}</a></p>
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+
+    </div>
+    
+    </div>
+  </div>
+
+
+
+
