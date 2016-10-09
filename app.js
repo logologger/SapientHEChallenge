@@ -1,4 +1,4 @@
-var app=angular.module("myApp",['mainController','mainDirective','ngAnimate', 'ui.router','CommonData','ngMaterial','ngMessages','SharedServiceFactoryModule','mainService','hljs'])
+var app=angular.module("myApp",['mainController','mainDirective','ngAnimate', 'ui.router','CommonData','ngMaterial','ngMessages','SharedServiceFactoryModule','mainService'])
 
 
 .config(function($stateProvider, $urlRouterProvider,$httpProvider,hljsServiceProvider)
